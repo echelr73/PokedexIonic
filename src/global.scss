@@ -25,6 +25,12 @@
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
 
+ion-header {
+    background: url('assets/img/pokedex-header.png') no-repeat;
+    min-height: 56px;
+    background-size: cover;
+}
+
 ion-text{
     color: black;
     font-size: 1.2em;
