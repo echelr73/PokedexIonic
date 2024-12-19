@@ -4,7 +4,7 @@
 
 <ion-content [fullscreen]="true">
   <ion-grid>
-    <ion-row *ngFor="let pokemon of pokemons" class="ion-align-items-center border-bottom">
+    <ion-row *ngFor="let pokemon of pokemons" class="ion-align-items-center border-bottom" (click)="goToPokemon(pokemon)">
       <ion-col size="3">
         <ion-img [src]="pokemon.sprite"></ion-img>
       </ion-col>

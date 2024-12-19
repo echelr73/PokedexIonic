@@ -30,7 +30,6 @@ export class PokemonService {
       return CapacitorHttp.get(options).then(async (response) => {
         let pokemons: Pokemon[] = [];
 
-        console.log(response);
 
         if (response.data) {
           const results = response.data.results;
@@ -50,10 +49,8 @@ export class PokemonService {
 
           }
           await Promise.all(promises).then((responses) => {
-            console.log(responses);
             for (const response of responses) {
               const pokemonData = response.data;
-              console.log(pokemonData);
 
               const pokemonObj = new Pokemon();
               pokemonObj.id = pokemonData.id;
