@@ -11,7 +11,8 @@ import { AppRoutingModule } from './app-routing.module';
   declarations: [AppComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    NavParams
+    NavParams,
+    ScreenOrientation
   ],
   bootstrap: [AppComponent],
 })
